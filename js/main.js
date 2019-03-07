@@ -46,7 +46,7 @@ $(document).ready(function() {
             }*/
         });
     }
-    
+
     //Highlight current page navbar menu item
     if ($('.navbar').length) {
         // Get current page URL
@@ -93,7 +93,7 @@ $(document).ready(function() {
         if($('.dropdown').hasClass('is-active')) {
             $('.dropdown').removeClass('is-active');
         }
-        //} 
+        //}
     });
 
     //Navigation Tabs
@@ -151,8 +151,8 @@ $(document).ready(function() {
         .on('click', function(event) {
         // On-page links
         if (
-            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-            && 
+            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+            &&
             location.hostname == this.hostname
         ) {
             // Figure out element to scroll to
@@ -184,6 +184,7 @@ $(document).ready(function() {
         $(this).toggleClass('is-active');
         $('.like-button svg').toggleClass('gelatine');
     })
+
 
     /* ---- particles.js config ---- */
 

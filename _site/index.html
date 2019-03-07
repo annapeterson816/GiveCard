@@ -153,6 +153,7 @@
                     </div>
                 </div>
             </section>
+        
             <!-- /Landing page Hero -->
         
             <!-- Icon Features section -->
@@ -161,16 +162,295 @@
                 <div class="container">
         
                     <div class="has-text-centered">
+                      <style>
+                        /* The Modal (background) */
+                        .modal {
+                          display: none; /* Hidden by default */
+                          position: fixed; /* Stay in place */
+                          z-index: 1; /* Sit on top */
+                          padding-top: 100px; /* Location of the box */
+                          left: 0;
+                          top: 0;
+                          width: 100%; /* Full width */
+                          height: 100%; /* Full height */
+                          overflow: auto; /* Enable scroll if needed */
+                          /* background-color: rgb(0,0,0); /* Fallback color */
+                          /* background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        
+                          }
+                          /* Modal Content */
+                          .modal-content {
+                            background-color: #2E0854; /*CHANGE TO RIGHT PURPLE */
+                            margin: auto;
+                            padding: 20px;
+                            border: 1px solid #888;
+                            width: 80%;
+                            }
+        
+                              /* The Close Button */
+                          .close {
+                            color: #aaaaaa;
+                            float: right;
+                            font-size: 28px;
+                            font-weight: bold;
+                            }
+        
+                          .close:hover,
+                          .close:focus {
+                            color: #000;
+                            text-decoration: none;
+                            cursor: pointer;
+                            }
+                        </style>
+        
+                        <body>
+        
+        
+                        <!-- Trigger/Open The Donation Page -->
+                              <button id="myBtn">
+                              <!-- Container -->
+                                      <a  target="_blank" class="button k-button k-secondary raised has-gradient is-fat is-bold rounded">
+                                          <span class="text">Donate Here!</span>
+                                          <span class="front-gradient"></span>
+                                      </a>
+        
+                              </button>
+        
+                              <!-- The Donation Page -->
+        
+                              <div id="myModal" class="modal">
+        
+                                <!-- Donation Button Content -->
+                                <div class="modal-content">
+                                  <span class="close">&times;</span>
+                                  <!-- Homeless bio section -->
+                                      <!-- Container -->
+                                      <div class="container">
+                                          <!-- Divider -->
+                                          <div class="divider is-centered"></div>
+                                          <!-- Title & subtitle -->
+                                          <h2 class="title is-light is-semibold has-text-centered is-spaced">Our Representatives</h2>
+                                          <h4 class="subtitle is-6 is-light has-text-centered is-compact">Meet of our first 5 homeless representatives.</h4>
+        
+                                          <!-- Content wrapper -->
+                                          <div class="content-wrapper is-large">
+                                              <div class="columns is-vcentered">
+        
+                                                  <div class="column is-hidden-mobile"></div>
+        
+                                                  <!-- Homeless Person #1 -->
+                                                  <div class="column is-3">
+                                                      <div class="team-member-container">
+                                                          <!-- Card -->
+                                                          <div class="dark-card">
+                                                              <!-- Avatar wrapper -->
+                                                              <div class="avatar">
+                                                                  <!-- Svg circle -->
+                                                                  <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="140" height="140" xmlns="http://www.w3.org/2000/svg">
+                                                                      <!-- Track -->
+                                                                      <circle class="circle-chart-background" stroke-width="1" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                                                      <!-- Stroke -->
+                                                                      <circle class="circle-chart-circle" stroke-width="1" stroke-dasharray="33,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                                                  </svg>
+                                                                  <!-- Sketeched face -->
+                                                                  <img class="is-sketch" src="assets/images/homeless/avatar1-female.png" alt="">
+                                                                  <!-- Real face -->
+                                                                  <img class="is-real" src="assets/images/homeless/avatar1-female.png" alt="">
+                                                              </div>
+                                                              <!-- Member meta -->
+                                                              <div class="member-info">
+                                                                  <h4 class="title is-light is-6 is-tight">Alannah</h4>
+                                                                  <p class="description">Alannah has 2 kids in school.</p>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+        
+                                                  <!-- Homeless Person #2 -->
+                                                  <div class="column is-3">
+                                                      <div class="team-member-container">
+                                                          <div class="dark-card">
+                                                              <div class="avatar">
+                                                                  <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="140" height="140" xmlns="http://www.w3.org/2000/svg">
+                                                                      <circle class="circle-chart-background" stroke-width="1" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                                                      <circle class="circle-chart-circle" stroke-width="1" stroke-dasharray="33,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                                                  </svg>
+                                                                  <img class="is-sketch" src="assets/images/homeless/avatar2-male.jpeg" alt="">
+                                                                  <img class="is-real" src="assets/images/homeless/avatar2.jpeg" alt="">
+                                                              </div>
+                                                              <div class="member-info">
+                                                                  <h4 class="title is-light is-6 is-tight">Sam</h4>
+                                                                  <p class="description">Sam has a passion for Boston sports. </p>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+        
+                                                  <!-- Homeless Person #3 -->
+                                                  <div class="column is-3">
+                                                      <div class="team-member-container">
+                                                          <div class="dark-card">
+                                                              <div class="avatar">
+                                                                  <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="140" height="140" xmlns="http://www.w3.org/2000/svg">
+                                                                      <circle class="circle-chart-background" stroke-width="1" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                                                      <circle class="circle-chart-circle" stroke-width="1" stroke-dasharray="33,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                                                  </svg>
+                                                                  <img class="is-sketch" src="assets/images/homeless/avatar3-male.png" alt="">
+                                                                  <img class="is-real" src="assets/images/homeless/avatar3-male.png" alt="">
+                                                              </div>
+                                                              <div class="member-info">
+                                                                  <h4 class="title is-light is-6 is-tight">Adam </h4>
+                                                                  <p class="description"> Adam served our country for 10 years.</p>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+        
+                                                  <div class="column is-hidden-mobile"></div>
+                                              </div>
+        
+                                              <!-- Container -->
+                                              <div class="container">
+        
+        
+                                                  <!-- Content wrapper -->
+                                                  <div class="content-wrapper is-large">
+                                                      <div class="columns is-vcentered">
+        
+                                                          <div class="column is-hidden-mobile"></div>
+        
+                                                          <!-- Homeless Person #4 -->
+                                                          <div class="column is-3">
+                                                              <div class="team-member-container">
+                                                                  <!-- Card -->
+                                                                  <div class="dark-card">
+                                                                      <!-- Avatar wrapper -->
+                                                                      <div class="avatar">
+                                                                          <!-- Svg circle -->
+                                                                          <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="140" height="140" xmlns="http://www.w3.org/2000/svg">
+                                                                              <!-- Track -->
+                                                                              <circle class="circle-chart-background" stroke-width="1" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                                                              <!-- Stroke -->
+                                                                              <circle class="circle-chart-circle" stroke-width="1" stroke-dasharray="33,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                                                          </svg>
+                                                                          <!-- Sketeched face -->
+                                                                          <img class="is-sketch" src="assets/images/homeless/avatar4-female.jpg" alt="">
+                                                                          <!-- Real face -->
+                                                                          <img class="is-real" src="assets/images/homeless/avatar4-female.jpg" alt="">
+                                                                      </div>
+                                                                      <!-- Member meta -->
+                                                                      <div class="member-info">
+                                                                          <h4 class="title is-light is-6 is-tight">Jane </h4>
+                                                                          <p class="description">Jane loves to make people smile.</p>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+        
+                                                          <!-- Homeless Person #5 -->
+                                                          <div class="column is-3">
+                                                              <div class="team-member-container">
+                                                                  <div class="dark-card">
+                                                                      <div class="avatar">
+                                                                          <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="140" height="140" xmlns="http://www.w3.org/2000/svg">
+                                                                              <circle class="circle-chart-background" stroke-width="1" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                                                              <circle class="circle-chart-circle" stroke-width="1" stroke-dasharray="33,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                                                          </svg>
+                                                                          <img class="is-sketch" src="assets/images/homeless/avatar5-female.jpg" alt="">
+                                                                          <img class="is-real" src="assets/images/homeless/avatar5-female.jpg" alt="">
+                                                                      </div>
+                                                                      <div class="member-info">
+                                                                          <h4 class="title is-light is-6 is-tight">Anne</h4>
+                                                                          <p class="description">Anne has two loving and caring dogs.</p>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+        
+                                                          <div class="column is-hidden-mobile"></div>
+                                                      </div>
+        
+                                  <!-- PAYMENT BUTTON -->
+                                        <form action="your-server-side-code" method="POST">
+                                          <!-- Container -->
+                                           <div class="container"> <!-- "container" -->
+        
+                                              <div class="has-text-centered">
+        
+        
+        
+        
+                                          <script
+                                              src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                                              data-key="pk_test_VTo7ogPYs5VsaqmJhNFNLbvk"
+                                              data-label = "Donate to a person"
+                                              data-amount="1000"
+                                              data-name="GiveCard"
+                                              data-description="Example charge"
+                                              data-zip-code="true"
+                                              data-image="assets/images/favicon.png"
+                                              data-locale="auto"
+                                              >
+                                            </script>
+        
+                                            </div>
+                                            <!-- <a>
+                                            <!-- <a href = "https://checkout.stripe.com/checkout.js" target="_blank" class="button k-button k-secondary raised has-gradient is-fat is-bold rounded"> -->
+                                                <!-- <span class="text">Donate Now</span>
+                                                <span class="front-gradient"></span>
+                                            </a> --> 
+                                        </form>
+        
+        
+        
+        
+                                </div>
+        
+                              </div>
+        
+        
+                              <script>
+                                // Get the modal
+                                var modal = document.getElementById('myModal');
+        
+                                // Get the button that opens the modal
+                                var btn = document.getElementById("myBtn");
+        
+                                // Get the <span> element that closes the modal
+                                var span = document.getElementsByClassName("close")[0];
+        
+                                // When the user clicks the button, open the modal
+                                btn.onclick = function() {
+                                  modal.style.display = "block";
+                                }
+        
+                                // When the user clicks on <span> (x), close the modal
+                                span.onclick = function() {
+                                  modal.style.display = "none";
+                                }
+        
+                                // When the user clicks anywhere outside of the modal, close it
+                                window.onclick = function(event) {
+                                  if (event.target == modal) {
+                                    modal.style.display = "none";
+                                  }
+                                }
+                              </script>
+                        </body>
                         <a href = "https://www.gofundme.com/givecard" target="_blank" class="button k-button k-secondary raised has-gradient is-fat is-bold rounded">
-                            <span class="text">Donate Now</span>
+                            <span class="text">Our GoFundMe</span>
                             <span class="front-gradient"></span>
                         </a>
         
-                        <div class="buy-title">The Basic Process</div>
+        
+                        </div>
+              </section>
         
         
-                    </div>
-        
+              <!-- The Basic Process -->
+              <section>
+                <div class="has-text-centered">
+                <div class="buy-title">The Basic Process</div>
                     <!-- Content wrapper -->
                     <div class="content-wrapper is-medium">
                         <div class="columns is-vcentered">
@@ -211,6 +491,9 @@
                 </div>
                 <!-- /Container -->
             </section>
+        
+        
+        
             <!-- /Icon Features section -->
         
             <!-- Side Features section -->
@@ -1096,6 +1379,9 @@
                                 </div>
                             </div>
                         </div>
+        
+        
+        
         
                         <div class="columns">
                             <div class="column is-6 is-offset-3">
